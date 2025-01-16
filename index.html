@@ -17,7 +17,7 @@
     <title>Pre-Entrega 2</title>
 </head>
 
-<body>
+<body id="bodyIndex">
     <header id="header">
         <h1>Chronobox</h1>
         <h2>Tu portal favorito de pantallas y píxeles</h2>
@@ -60,47 +60,116 @@
 
     </header>
 
-    <main id="main">
-        <h2>Noticias</h2>
+    <main id="mainIndex">
+        <h2>ÚLTIMAS NOTICIAS</h2>
        
-        <section class="noticias1">  <!-- clase para la primera seccion de noticias -->
-            <article class="noticias1__articulo1 contenedor--noticias"> <!-- contenedor para primer articulo de noticias -->
-                <article class="noticias1__articulo1--imagen"> <!-- articulo para trabajar la caja de la imagen -->
-                    <img class="articulo__img" src="./images/gow-ragnarok.jpeg" alt="Portada de God of War Ragnarok">
-                </article>
-                <article class="noticias1__articulo1--descripcion contenedor--descripcion"> <!-- articulo para trabajar la caja del titulo de la noticia, logo de clasificacion y descripcion -->
-                    <h3 class="articulo--titulo">God of War: Ragnarok</h3>
-                    <p>God of War: Ragnarok es un videojuego de acción y aventura que continúa la historia de Kratos y su hijo Atreus, quienes deben enfrentarse al inminente Ragnarok, el fin del mundo en la mitología nórdica. </p>
-                    <img src="./icons/gaming.png" alt="logo de categoria de gaming">
-                </article>
-            </article>
-           
-            <article class="noticias1__articulo2 contenedor--noticias"> 
-                <article class="noticias1__articulo2--imagen"> 
-                    <img class="articulo__img" src="./images/mufasa.jpg" alt="Portada de Mufasa">
-                </article>
-                <article class="noticias1__articulo2--descripcion contenedor--descripcion"> 
-                    <h3 class="articulo--titulo">Mufasa</h3>
-                    <p>A través de una narrativa visual impresionante, nos sumerge en la juventud de Mufasa, su relación con su hermano Scar y su ascenso al trono.  </p>
-                    <img src="./icons/movies.png" alt="Logo de categoría de películas">
-                </article>
-            </article>
+        <!-- contenedor de todo el 1° sector de noticias -->
+        <section class="contenedor__noticia"> 
+          <article class="noticia">           
+              <img class="noticia--portada" src="./images/gow-ragnarok.jpeg" alt="Portada de God of War Ragnarok">
+              <div class="contenedor__noticia--texto">
+                  <h3>God of War Ragnarok</h3>
+                  <p>God of War: Ragnarok es un videojuego de acción y aventura que continúa la historia de Kratos y su hijo Atreus, quienes deben enfrentarse al inminente Ragnarok, el fin del mundo en la mitología nórdica.</p>
+                  <img class="articulo--logo" src="./icons/gaming.png" alt="logo de categoria de gaming">
+              </div>
+          </article>.
 
-            <article class="noticias1__articulo3 contenedor--noticias"> 
-                <article class="noticias1__articulo3--imagen"> 
-                    <img class="articulo__img" src="./images/suits.jpg" alt="Portada de Suits">
-                </article>
-                <article class="noticias1__articulo3--descripcion contenedor--descripcion"> 
-                    <h3 class="articulo--titulo">Suits</h3>
-                    <p>Sigue a Harvey Specter, un abogado de élite, y a Mike Ross, un brillante joven sin título legal, mientras navegan por casos complejos y maniobras dentro de un prestigioso bufete en Nueva York. </p>
-                    <img src="./icons/series.png" alt="Logo de categoría de series">
-                </article>
-            </article>
+          <article class="noticia">
+              <img class="noticia--portada" src="./images/mufasa.jpg" alt="Portada de Mufasa">
+              <div class="contenedor__noticia--texto">
+                  <h3>Mufasa</h3>
+                  <p>A través de una narrativa visual impresionante, nos sumerge en la juventud de Mufasa, su relación con su hermano Scar y su ascenso al trono.</p>
+                  <img class="articulo--logo" src="./icons/movies.png" alt="Logo de categoría de películas">
+              </div>
+          </article>
 
+          <article class="noticia">
+              <img class="noticia--portada" src="./images/suits.jpg" alt="Portada de Suits">
+              <div class="contenedor__noticia--texto">
+                  <h3>Suits</h3>
+                  <p>Sigue a Harvey Specter, un abogado de élite, y a Mike Ross, un brillante joven sin título legal, mientras navegan por casos complejos y maniobras dentro de un prestigioso bufete en Nueva York.</p>
+                  <img class="articulo--logo" src="./icons/series.png" alt="Logo de categoría de series">
+              </div>
+          </article>
+        </section>
+
+        <!-- carousel con bootstrap -->
+        <section class="contenedor__destacadas"> 
+          <div id="carouselExampleCaptions" class="carousel slide"> 
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/jumanji.jpg" class="d-block w-100" alt="Portada de jumanji">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Jumanji</h3>
+                  <p>Los productores de American Horror Story van por la adaptación del clásico juego a la pantalla chica.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/projectl.jpg" class="d-block w-100" alt="Imagen de Project L">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Project L</h3>
+                  <p>Riot inicia la beta abierta de su nuevo juego de peleas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/wukong.jpg" class="d-block w-100" alt="Imagen de Wukong">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Black Myth Wukong</h3>
+                  <p>El gigante chino no descarta una secuela de su juego emblema.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
         
+        <!-- contenedor de todo el 2° sector de noticias -->
+        <section class="contenedor__noticia"> 
+          <article class="noticia">           
+              <img class="noticia--portada" src="./images/witcher4.jpg" alt="Portada de Witcher 4">
+              <div class="contenedor__noticia--texto">
+                  <h3>Witcher 4</h3>
+                  <p>CD Projekt Red ha confirmado oficialmente el desarrollo de "The Witcher 4", la esperada continuación de su exitosa saga de juegos de rol. A través de un comunicado, la compañía reveló que la nueva entrega marcará el regreso al universo de "The Witcher" con una historia completamente nueva y un enfoque renovado en la jugabilidad.</p>
+                  <img class="articulo--logo" src="./icons/gaming.png" alt="logo de categoria de gaming">
+              </div>
+          </article>.
 
+          <article class="noticia">
+              <img class="noticia--portada" src="./images/captainamerica.jpg" alt="Portada de Captain America">
+              <div class="contenedor__noticia--texto">
+                  <h3>Captain America: Brave New World</h3>
+                  <p>Marvel Studios ha revelado oficialmente el título de su próxima película de Captain America, "Brave New World", que contará con Anthony Mackie retomando su rol como Sam Wilson, el nuevo Capitán América. La película promete explorar los desafíos y responsabilidades del héroe en un mundo post-Endgame, mientras se enfrenta a nuevas amenazas.</p>
+                  <img class="articulo--logo" src="./icons/movies.png" alt="Logo de categoría de películas">
+              </div>
+          </article>
+
+          <article class="noticia">
+              <img class="noticia--portada" src="./images/tedlasso.png" alt="Portada de Ted Lasso">
+              <div class="contenedor__noticia--texto">
+                  <h3>Ted Lasso</h3>
+                  <p>La aclamada serie "Ted Lasso" regresa con una nueva temporada llena de risas, emoción y fútbol. La serie, protagonizada por Jason Sudeikis como el carismático entrenador estadounidense, sigue conquistando corazones con su optimismo y entrañables personajes.</p>
+                  <img class="articulo--logo" src="./icons/series.png" alt="Logo de categoría de series">
+              </div>
+          </article>
+        </section>
     </main>
+
+    <aside>
+
+
+    </aside>
 
 
     <footer id="footer">

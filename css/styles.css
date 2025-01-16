@@ -14,9 +14,10 @@
     align-items: center;
     justify-content: space-around;
     row-gap: 25px;
-    padding-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-family: Poppins;
-    background-color: rgb(20, 33, 61);
+    background-color: rgb(57, 0, 153);
     color: white;
 }
 
@@ -25,13 +26,15 @@
 }
 
 #header h2 {
-    color: rgb(255, 94, 91);
+    color: rgb(255, 189, 04);
     font-weight: 300;
-    font-size: x-large;    
+    font-size: x-large;   
 }
 
+
+/* NAVBAR */ 
 .container-fluid{ 
-    background-color: rgb(20, 33, 61);
+    background-color: rgb(57, 0, 153);
 }
 
 .navbar-brand img {
@@ -47,98 +50,131 @@
     color: white;
 }
 
-/* .navbar-toggler-icon{
-    border-color: 2px solid white;
-} */
-
-/* Modificacion del color del menú sandwich del navbar (como no lograba cambiarlo con simplemente llamar a la clase y cambiar el color, encontre que se podía cambiar la imagen directamente con un svg y tocarle el color desde ahi) */ 
+/* Modificacion del color del menú sandwich del navbar (como no lograba cambiarlo con simplemente llamar a la clase y cambiar el color, encontre que se podía cambiar la imagen directamente y tocarle el color desde ahi) */ 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(0, 128, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/*FIN DE NAVBAR */ 
 /* FIN DE HEADER */ 
 
-/* BODY */ 
 
 
+/* BODY INDEX */ 
+#bodyIndex{
+    background-color: rgb(72, 63, 81);
+}
 
-/* MAIN */ 
-
-#main h2 { 
-    margin-top: 10px;
+/* MAIN INDEX */ 
+#mainIndex h2 { 
+    margin-top: 20px;
+    font-size: 2vw;
     width: 100%;
     display:flex; 
     justify-content: center;
+    color: rgb(229, 229, 229);
+    letter-spacing: 8PX;
+    font-weight: 300;
 }
 
 
-/* NOTICIAS PRIMER SECTION */
-.noticias1 { 
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content:center;
-    flex-wrap: wrap;
-    background-color: rgb(218, 218, 218);
-    gap: 1em;
-    /* border: 1px solid red; */
-}
-
-.contenedor--noticias {  
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    width: 70%;
-    gap: 2em;
-    /* border: 1px solid green; */
-}
-
-
-.articulo__img { 
-    height: 300px;
-    width: auto;
-    border: 3px solid black;
-    border-radius: 5px;
-    object-fit: cover;
- }
-
-.contenedor--descripcion { 
-    height: 300px;
-    display: flex;
+/* NOTICIAS */
+.contenedor__noticia { /* contenedor de toda la primer sección de noticias */
+    display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    /* border: 1px solid crimson; */
-    justify-content:start; 
-}
-
-.contenedor--descripcion img{
-    width: 50px;
-}
-
-.articulo--titulo { 
-    font-size: x-large;
     margin-top: 10px;
 }
 
+.noticia { /* clase para cada noticia */ 
+    width: 80%; 
+    background-color: rgb(48, 45, 51);
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    margin: 20px;
+    display: flex;
+    gap: 40px;
+    
+}
 
-/* footer */ 
+.contenedor__noticia--texto{  /* contenedor de titulo, parrafo y logo de categoria de cada noticia */ 
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    gap:10px;
+    width: 50%;
+}
+
+.contenedor__noticia--texto h3{ /* titulo de cada noticia */
+    margin-top: 10px;
+    font-size: 4vh;
+
+}
+
+.contenedor__noticia--texto p{ /* texto de cada noticia */ 
+    flex:1 ; /* con esto hago que el texto empuje hacia abajo el último elemento del contenedor con flex */ 
+    font-size: 2vh;
+    line-height: 1.5;
+    margin-right: 20px;
+}
+
+.noticia--portada { /*imagen portada de cada noticia */ 
+    width: 50%;
+    height: auto;
+    object-fit:cover;
+}
+
+.articulo--logo { /* logo de categoria de cada noticia */ 
+    justify-self:end;
+    width: 10%;
+    margin-bottom: 10px;
+    
+}
+/* FIN NOTICIAS PRIMER SECTION */ 
+
+/* CAROUSEL NOTICIAS DESTACADAS */ 
+.carousel-caption{
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption h3{
+    font-size: 2vw;
+}
+
+.carousel-caption p{
+    font-size: 1.8vw;
+}
+
+
+
+/*BODY*/
+
+/* FOOTER */ 
 #footer {
-    height: 200px;
-    background-color: black ;
+    height: 300px;
+    background-color: rgb(19, 19, 19) ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #footer ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer__redes li { 
     list-style: none;
-    height: 10%;
+
+    width: auto;
 }
 
 .footer__copy h4 { 
