@@ -1,32 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Entrega</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap Style Sheet-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Style Sheet propio-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Pre-Entrega 2 - Juegos</title>
 </head>
+
+
+
+
 <body>
-    <header>
-        <h1>Juegos</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Noticias</a></li>
-                <li><a href="../pages/peliculas.html">Películas</a></li>
-                <li><a href="../pages/tv.html">TV</a></li>
-                <li><a href="#">Juegos</a></li>
-                <li><a href="../pages/estrenos.html">Estrenos</a></li>
-                <li><a href="../pages/micuenta.html">Mi Cuenta</a></li>
-            </ul>
+    <header id="header">
+        <h1>Chronobox</h1>
+        <h2>Tu portal favorito de pantallas y píxeles</h2>
+
+        <!-- NAVBAR con Bootstrap -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../icons/logo-nav.png" alt="logo de Chronobox"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/peliculas.html">Películas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/tv.html">TV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gaming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/estrenos.html">Estrenos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Busca por producto..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Busca</button>
+                    </form>
+                </div>
+            </div>
         </nav>
+
     </header>
 
 
-    <main>
+    <main id="mainGaming"> 
+        <h2>ÚLTIMAS NOTICIAS DEL GAMING</h2>
 
-    </main>
+        <section class="gaming__noticiasRel"> 
+            <article class="noticias_articulo">
+                <a class="articulo--titulo" href="#"> Switch 2: Trailer revelado </a> 
+                <div class="articulo--imagen"> 
+                    <a href="#"> <img src="../images/gaming/switch2.jpeg" alt="Switch 2"> </a>
+                </div>
+            </article>
 
-    <footer>
-        
-    </footer>
+            <article class="noticias_articulo">
+                <a class="articulo--titulo" href="#">FFVII Rebirth: Rompe records en Steam </a>
+                <div class="articulo--imagen">
+                    <a href="#"> <img src="../images/gaming/ffvii-rebirth.jpeg" alt="Robert De Niro"> </a>
+                </div>
+            </article>
+
+            <article class="noticias_articulo">
+                <a class="articulo--titulo" href="#"> Pokemon TCG recibe su nueva actualizacion </a>
+                <div class="articulo--imagen">
+                    <a href="#"> <img src="../images/gaming/pokemon-tcg.jpeg" alt="Pokemon TCG"> </a>
+                </div>
+            </article>
+
+            <article class="noticias_articulo">
+                <a class="articulo--titulo" href="#"> La consola competencia de PS2 que no vio la luz </a>
+                <div class="articulo--imagen">
+                    <a href="#"> <img src="../images/gaming/ps2.jpeg" alt="PS2"> </a>
+                </div>
+            </article>
+
+            <article class="noticias_articulo">
+                <a class="articulo--titulo" href="#"> Stellar Blade a mitad de precio en Steam </a>
+                <div class="articulo--imagen">
+                    <a href="#"> <img src="../images/gaming/stellar-blade.jpeg" alt="Stellar Blade"> </a>
+                </div>
+            </article>
+
+            <article class="noticias_articulo">
+                <a class="articulo--titulo" href="#"> Rivals anuncia nuevos personajes </a>
+                <div class="articulo--imagen">
+                    <a href="#"> <img src="../images/gaming/marvel-rivals.jpeg" alt="Marvel Rivals"> </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="contenedor__noticiaPelicula">
+            <article class="noticiaPelicula">
+              <img class="noticiaPelicula--portada" src="../images/gaming/gta6.jpg" alt="GTA VI">
+              <div class="noticiaPelicula--texto">
+                <h3>GTA VI</h3>
+                <p>¿Podría GTA 6 costar 100 dolares? La industria tiene 'esperanza' de que así sea, según un analista...</p>
+              </div>
+            </article>
+            <article class="noticiaPelicula">
+                <img class="noticiaPelicula--portada" src="../images/gaming/silksong.jpg" alt="Silksong">
+                <div class="noticiaPelicula--texto">
+                  <h3>Silksong</h3>
+                  <p>Los creadores de Hollow Knight: Silksong rompen su silencio: 'Es real, está progresando y se lanzará... </p>
+                </div>
+              </article>
+              <article class="noticiaPelicula">
+                <img class="noticiaPelicula--portada" src="../images/gaming/donkey.jpg" alt="Donkey Kong">
+                <div class="noticiaPelicula--texto">
+                  <h3>Donkey Kong</h3>
+                  <p>Así cambia el diseño de Donkey Kong en Mario Kart 9 para que se parezca más al de Super Mario Bros. La Película...</p>
+                </div>
+              </article>
+              <article class="noticiaPelicula">
+                <img class="noticiaPelicula--portada" src="../images/gaming/shelter.jpg" alt="Shelter from the Storm">
+                <div class="noticiaPelicula--texto">
+                  <h3>Shelter from the Storm</h3>
+                  <p>Si te gusta Monkey Island y Maniac Mansion esta aventura gráfica gratuita te llenará de nostalgia...</p>
+                </div>
+              </article>.
+        </section>
+</main>
+
+<footer id="footer">
+    <section class="footer__redes">
+      <ul>
+        <li><a href="https://instagram.com"><img src="../icons/instagram.png" alt="logo de instagram"></a></li>
+        <li><a href="https://x.com"><img src="../icons/x.png" alt="logo de X"></a></li>
+        <li><a href="https://spotify.com"><img src="../icons/spotify.png" alt="logo de Spotify"></a></li>
+        <li><a href="https://youtube.com"><img src="../icons/youtube.png" alt="logo de Youtube"></a></li>
+      </ul>
+    </section>
+    <section class="footer__copy">
+      <h4>Copyright - CHRONOBOX</h4>
+    </section>
+  </footer>
 </body>
+
 </html>

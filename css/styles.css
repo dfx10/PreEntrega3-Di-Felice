@@ -332,7 +332,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
   }
   
   
@@ -437,3 +437,54 @@
 /* FIN SECTION NOTICIAS GAMING EN FLEX */ 
 /* FIN MAIN PELICULAS */ 
 /* FIN PAGE PELICULAS */ 
+
+
+
+/* PAGE GAMING */ 
+#mainGaming{
+    background-color: rgb(74, 63, 84);
+}
+
+#mainGaming h2 { 
+    width: 100%;
+    color: rgb(194, 164, 248);
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    padding-top: 50px;
+}
+
+.gaming__noticiasRel{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 20px;
+  }
+  
+/* FIN PAGE GAMING */ 
+
+
+/* PAGE SERIES */ 
+#mainSeries{
+    background-color: rgb(233, 198, 152);
+}
+
+#mainSeries h2{
+    width: 100%;
+    color: rgb(66, 54, 88);
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    padding-top: 50px;
+}
+
+.series__noticiasRel{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 20px;
+  }
+  
+/* FIN PAGE SERIES */ 
