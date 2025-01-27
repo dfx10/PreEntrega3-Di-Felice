@@ -1,0 +1,12 @@
+@use "presets/reset";
+@use "presets/variables";
+@use "presets/header";
+@use "presets/slider-brands";
+@use "presets/footer";
+
+/* PAGES */
+@use "pages-sass/peliculas";
+@use "pages-sass/juegos";
+@use "pages-sass/series";
+@use "pages-sass/estrenos";
+@use "pages-sass/index";

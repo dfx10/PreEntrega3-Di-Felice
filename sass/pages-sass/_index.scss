@@ -1,0 +1,124 @@
+/* BODY INDEX */ 
+#bodyIndex{
+    background-color: rgb(144, 87, 202);
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* MAIN INDEX */ 
+#mainIndex h2 { 
+    margin: 10px 10px 10px 10px;
+    font-size: 2rem;
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    text-align: center;
+    color:white;
+    letter-spacing: 8PX;
+    font-weight: 300;
+}
+
+/* NOTICIAS */
+.noticiasIndex {
+    margin: 0;
+    padding: 30px 15px 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262525;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card__noticia {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 800px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card__noticia img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .noticia__contenido {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contenido--genero {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .contenido--titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .contenido--descripcion {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* noticias cards responsive con media queries */ 
+  @media (max-width: 800px) {      
+    .card__noticia {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .card__noticia img {
+        width: 100%;
+        height: auto;
+    }
+  
+    .noticia__contenido {
+        padding: 10px;
+    }
+  
+    .contenido--titulo {
+        font-size: 16px;
+    }
+  
+    .contenido--descripcion {
+        font-size: 13px;
+    }
+  
+    .contenido--genero {
+        font-size: 11px;
+    }
+  }
+
+
+
+/* FIN NOTICIAS PRIMER SECTION */ 
+
+/* CAROUSEL NOTICIAS DESTACADAS */ 
+
+
+.carousel-caption{
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption h3{
+    font-size: 2vw;
+}
+
+.carousel-caption p{
+    font-size: 1.8vw;
+}
+/* FIN CAROUSEL NOTICIAS DESTACADAS */ 
+/* FIN MAIN INDEX */ 
+/* FIN DE BODY INDEX*/

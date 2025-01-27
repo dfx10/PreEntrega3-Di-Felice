@@ -1,0 +1,64 @@
+/*HEADER GENERAL*/
+#header { 
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: var(--color-primario); 
+    color: white;
+}
+
+#header h1{
+    font-weight: 600;
+    font-family: "Poppins","Sans-serif";
+    letter-spacing: 6px;
+}
+
+#header h2 {
+    color: var(--color-secundario);
+    font-weight: 400;
+    font-size: 2em;   
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    font-family: "Oswald";
+}
+
+
+/* NAVBAR GENERAL*/ 
+.container-fluid{ 
+    background-color: var(--color-primario);
+    font-family: "Poppins";
+}
+
+.navbar-brand img {
+    width: 50px;
+    align-self: center;
+}
+
+.nav-item a { 
+    color: white;
+}
+
+.d-flex button{ 
+    color: white;
+}
+
+/* Modificacion del color del menú sandwich del navbar (como no lograba cambiarlo con simplemente llamar a la clase y cambiar el color, encontre que se podía cambiar la imagen directamente y tocarle el color desde ahi) */ 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(0, 128, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Modificacion del color del hover de los links */ 
+.nav-link:hover {
+    color: var(--color-secundario); 
+}
+
+/*FIN DE NAVBAR GENERAL */ 
+/* FIN DE HEADER */ 

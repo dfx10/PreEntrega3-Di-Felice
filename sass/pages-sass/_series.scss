@@ -1,0 +1,26 @@
+
+/* PAGE SERIES */ 
+#mainSeries{
+    background-color: rgb(233, 198, 152);
+}
+
+#mainSeries h2{
+    padding-top: 20px;
+    font-size: rem;
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    text-align: center;
+    color: rgb(229, 229, 229);
+    letter-spacing: 8PX;
+    font-weight: 300;
+}
+
+.series__noticiasRel{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 20px;
+  }
+  
+/* FIN PAGE SERIES */ 

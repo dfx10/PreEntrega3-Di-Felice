@@ -1,0 +1,25 @@
+/* PAGE GAMING */ 
+#mainGaming{
+    background-color: rgb(74, 63, 84);
+}
+
+#mainGaming h2 { 
+    padding-top: 20px;
+    font-size: 2rem;
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    text-align: center;
+    color: rgb(229, 229, 229);
+    letter-spacing: 8PX;
+    font-weight: 300;
+}
+
+.gaming__noticiasRel{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    padding: 20px;
+  }
+  
+/* FIN PAGE GAMING */ 
